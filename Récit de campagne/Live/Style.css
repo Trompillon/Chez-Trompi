@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'Icecold.ttf';
+    src: url('Icecold.ttf') format('truetype');
+  }
+@font-face {
+  font-family: 'Icecold-Italic.ttf';
+  src: url('Icecold-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gar-A-MondTall.ttf';
+  src: url('Gar-A-MondTall.ttf') format('truetype');
+}
+body {
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+    max-width: 2000px; /* Remplacez la valeur par celle de votre choix */
+    padding: 0 100px; /* Ajoutez une marge de 20 pixels à gauche et à droite */
+}
+
+nav {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+nav img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100px;
+  height: auto;
+  z-index: 9999;
+  margin-left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+  left: -100px;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  font-family: 'Gar-A-MondTall.ttf', sans-serif;
+}
+
+nav ul li a:hover {
+  background-color: rgb(42, 154, 182);
+}
+
+section {
+  text-align: center;
+  font-family: 'Times New Roman', sans-serif;
+  font-size: 20px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  max-width: 800px; /* Définissez la largeur maximale souhaitée */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section h2 {
+  font-size: 44px; /* ou la taille souhaitée */
+  font-family: 'Icecold.ttf', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Permet aux éléments internes de s'enrouler sur deux colonnes */
+}
+
+.column {
+  flex: 1 0 40%; /* Flex-grow: 1, Flex-shrink: 0, Flex-basis: 40% (occupe 40% de la largeur disponible) */
+  padding: 20px;
+  text-align: center;
+  margin-bottom: -35px;
+}
+
+.column a {
+  position: relative;
+  display: block;
+  text-decoration: none;
+}
+
+.column img {
+  width: 100%;
+  height: auto;
+}
+
+.image-link {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+  
+}
+
+.image-link img {
+  transition: opacity 0.3s ease;
+}
+
+.image-link:hover img {
+  opacity: 0.8;
+}
+
+.image-link:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}

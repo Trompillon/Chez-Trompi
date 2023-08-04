@@ -1,0 +1,1204 @@
+@font-face {
+    font-family: 'Icecold.ttf';
+    src: url('Icecold.ttf') format('truetype');
+  }
+@font-face {
+  font-family: 'Icecold-Italic.ttf';
+  src: url('Icecold-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gar-A-MondTall.ttf';
+  src: url('Gar-A-MondTall.ttf') format('truetype');
+}
+body {
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+    max-width: 2000px; /* Remplacez la valeur par celle de votre choix */
+    padding: 0 100px; /* Ajoutez une marge de 20 pixels à gauche et à droite */
+}
+
+nav {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+nav img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100px;
+  height: auto;
+  z-index: 9999;
+  margin-left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+  left: -100px;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  font-family: 'Gar-A-MondTall.ttf', sans-serif;
+}
+
+nav ul li a:hover {
+  background-color: rgb(42, 154, 182);
+}
+
+section {
+  text-align: center;
+  font-family: 'Times New Roman', sans-serif;
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 800px; /* Définissez la largeur maximale souhaitée */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section h2 {
+  font-size: 44px; /* ou la taille souhaitée */
+}
+
+.container {
+  position: relative;
+  width: 600px;
+  height: 300px;
+  margin-bottom: 30px;
+}
+
+.container .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+  border: 2px solid rgb(124, 234, 241);
+  border-radius: 5px;
+}
+
+.container .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.container .text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: rgb(126, 234, 238);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.container:hover .image {
+  transform: rotateY(90deg);
+}
+
+.container:hover .text-overlay {
+  opacity: 1;
+}
+
+.additional-text {
+  position: relative;
+  top: 10px;
+  left: 110%;
+  font-size: 20px;
+  width: 180%;
+}
+
+.container.flex-container1 {
+  position: relative;
+  float: right;
+  width: 600px;
+  height: 300px;
+  margin-bottom: 30px;
+}
+
+.container.flex-container1 .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+  border: 2px solid rgb(124, 234, 241);
+  border-radius: 5px;
+}
+
+.container.flex-container1 .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.container.flex-container1 .text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: rgb(126, 234, 238);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.container.flex-container1:hover .image {
+  transform: rotateY(90deg);
+}
+
+.container.flex-container1:hover .text-overlay {
+  opacity: 1;
+}
+
+.additional-text1 {
+  position: relative;
+  top: 10px;
+  left: -185%;
+  font-size: 20px;
+  width: 180%;
+}
+
+.container.flex-container2 {
+  position: relative;
+  width: 600px;
+  height: 300px;
+  clear: both;
+  margin-bottom: 30px;
+}
+
+.container.flex-container2 .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+  border: 2px solid rgb(124, 234, 241);
+  border-radius: 5px;
+}
+
+.container.flex-container2 .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.container.flex-container2 .text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: rgb(126, 234, 238);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.container.flex-container2:hover .image {
+  transform: rotateY(90deg);
+}
+
+.container.flex-container2:hover .text-overlay {
+  opacity: 1;
+}
+
+.additional-text2 {
+  position: relative;
+  top: 20px;
+  left: 110%;
+  font-size: 20px;
+  width: 180%;
+}
+
+.container.flex-container3 {
+  position: relative;
+  float: right;
+  width: 600px;
+  height: 300px;
+  margin-bottom: 30px;
+}
+
+.container.flex-container3 .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+  border: 2px solid rgb(124, 234, 241);
+  border-radius: 5px;
+}
+
+.container.flex-container3 .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.container.flex-container3 .text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: rgb(126, 234, 238);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.container.flex-container3:hover .image {
+  transform: rotateY(90deg);
+}
+
+.container.flex-container3:hover .text-overlay {
+  opacity: 1;
+}
+
+.additional-text3 {
+  position: relative;
+  top: 10px;
+  left: -185%;
+  font-size: 20px;
+  width: 180%;
+}
+
+.container.flex-container4 {
+  position: relative;
+  width: 600px;
+  height: 300px;
+  clear: both;
+  margin-bottom: 30px;
+}
+
+.container.flex-container4 .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+  border: 2px solid rgb(124, 234, 241);
+  border-radius: 5px;
+}
+
+.container.flex-container4 .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.container.flex-container4 .text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: rgb(126, 234, 238);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.container.flex-container4:hover .image {
+  transform: rotateY(90deg);
+}
+
+.container.flex-container4:hover .text-overlay {
+  opacity: 1;
+}
+
+.additional-text4 {
+  position: relative;
+  top: 20px;
+  left: 110%;
+  font-size: 20px;
+  width: 180%;
+}
+
+.container.flex-container5 {
+  position: relative;
+  float: right;
+  width: 600px;
+  height: 300px;
+  margin-bottom: 30px;
+}
+
+.container.flex-container5 .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+  border: 2px solid rgb(124, 234, 241);
+  border-radius: 5px;
+}
+
+.container.flex-container5 .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.container.flex-container5 .text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: rgb(126, 234, 238);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.container.flex-container5:hover .image {
+  transform: rotateY(90deg);
+}
+
+.container.flex-container5:hover .text-overlay {
+  opacity: 1;
+}
+
+.additional-text5 {
+  position: relative;
+  top: 10px;
+  left: -185%;
+  font-size: 20px;
+  width: 180%;
+}
+
+.container.flex-container6 {
+  position: relative;
+  width: 600px;
+  height: 300px;
+  clear: both;
+  margin-bottom: 30px;
+}
+
+.container.flex-container6 .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+  border: 2px solid rgb(124, 234, 241);
+  border-radius: 5px;
+}
+
+.container.flex-container6 .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.container.flex-container6 .text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: rgb(126, 234, 238);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.container.flex-container6:hover .image {
+  transform: rotateY(90deg);
+}
+
+.container.flex-container6:hover .text-overlay {
+  opacity: 1;
+}
+
+.additional-text6 {
+  position: relative;
+  top: 20px;
+  left: 110%;
+  font-size: 20px;
+  width: 180%;
+}
+
+.container.flex-container7 {
+  position: relative;
+  float: right;
+  width: 600px;
+  height: 300px;
+  margin-bottom: 30px;
+}
+
+.container.flex-container7 .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+  border: 2px solid rgb(124, 234, 241);
+  border-radius: 5px;
+}
+
+.container.flex-container7 .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.container.flex-container7 .text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: rgb(126, 234, 238);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.container.flex-container7:hover .image {
+  transform: rotateY(90deg);
+}
+
+.container.flex-container7:hover .text-overlay {
+  opacity: 1;
+}
+
+.additional-text7 {
+  position: relative;
+  top: 10px;
+  left: -185%;
+  font-size: 20px;
+  width: 180%;
+}
+
+.container.flex-container8 {
+  position: relative;
+  width: 600px;
+  height: 300px;
+  clear: both;
+  margin-bottom: 30px;
+}
+
+.container.flex-container8 .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+  border: 2px solid rgb(124, 234, 241);
+  border-radius: 5px;
+}
+
+.container.flex-container8 .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.container.flex-container8 .text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: rgb(126, 234, 238);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.container.flex-container8:hover .image {
+  transform: rotateY(90deg);
+}
+
+.container.flex-container8:hover .text-overlay {
+  opacity: 1;
+}
+
+.additional-text8 {
+  position: relative;
+  top: 20px;
+  left: 110%;
+  font-size: 20px;
+  width: 180%;
+}
+
+.container.flex-container9 {
+  position: relative;
+  float: right;
+  width: 600px;
+  height: 300px;
+  margin-bottom: 30px;
+}
+
+.container.flex-container9 .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+  border: 2px solid rgb(124, 234, 241);
+  border-radius: 5px;
+}
+
+.container.flex-container9 .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.container.flex-container9 .text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: rgb(126, 234, 238);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.container.flex-container9:hover .image {
+  transform: rotateY(90deg);
+}
+
+.container.flex-container9:hover .text-overlay {
+  opacity: 1;
+}
+
+.additional-text9 {
+  position: relative;
+  top: 10px;
+  left: -185%;
+  font-size: 20px;
+  width: 180%;
+}
+
+.container.flex-container10 {
+  position: relative;
+  width: 600px;
+  height: 300px;
+  clear: both;
+  margin-bottom: 30px;
+}
+
+.container.flex-container10 .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+  border: 2px solid rgb(124, 234, 241);
+  border-radius: 5px;
+}
+
+.container.flex-container10 .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.container.flex-container10 .text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: rgb(126, 234, 238);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.container.flex-container10:hover .image {
+  transform: rotateY(90deg);
+}
+
+.container.flex-container10:hover .text-overlay {
+  opacity: 1;
+}
+
+.additional-text10 {
+  position: relative;
+  top: 20px;
+  left: 110%;
+  font-size: 20px;
+  width: 180%;
+}
+
+.container.flex-container11 {
+  position: relative;
+  float: right;
+  width: 600px;
+  height: 300px;
+  margin-bottom: 30px;
+}
+
+.container.flex-container11 .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+  border: 2px solid rgb(124, 234, 241);
+  border-radius: 5px;
+}
+
+.container.flex-container11 .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.container.flex-container11 .text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: rgb(126, 234, 238);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.container.flex-container11:hover .image {
+  transform: rotateY(90deg);
+}
+
+.container.flex-container11:hover .text-overlay {
+  opacity: 1;
+}
+
+.additional-text11 {
+  position: relative;
+  top: 10px;
+  left: -185%;
+  font-size: 20px;
+  width: 180%;
+}
+
+.container.flex-container12 {
+  position: relative;
+  width: 600px;
+  height: 300px;
+  clear: both;
+  margin-bottom: 30px;
+}
+
+.container.flex-container12 .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+  border: 2px solid rgb(124, 234, 241);
+  border-radius: 5px;
+}
+
+.container.flex-container12 .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.container.flex-container12 .text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: rgb(126, 234, 238);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.container.flex-container12:hover .image {
+  transform: rotateY(90deg);
+}
+
+.container.flex-container12:hover .text-overlay {
+  opacity: 1;
+}
+
+.additional-text12 {
+  position: relative;
+  top: 20px;
+  left: 110%;
+  font-size: 20px;
+  width: 180%;
+}
+
+.container.flex-container13 {
+  position: relative;
+  float: right;
+  width: 600px;
+  height: 300px;
+  margin-bottom: 100px;
+}
+
+.container.flex-container13 .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+  border: 2px solid rgb(124, 234, 241);
+  border-radius: 5px;
+}
+
+.container.flex-container13 .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.container.flex-container13 .text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: rgb(126, 234, 238);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.container.flex-container13:hover .image {
+  transform: rotateY(90deg);
+}
+
+.container.flex-container13:hover .text-overlay {
+  opacity: 1;
+}
+
+.additional-text13 {
+  position: relative;
+  top: 10px;
+  left: -185%;
+  font-size: 20px;
+  width: 180%;
+}
+
+.container.flex-container14 {
+  position: relative;
+  width: 600px;
+  height: 300px;
+  clear: both;
+  margin-bottom: 30px;
+}
+
+.container.flex-container14 .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+  border: 2px solid rgb(124, 234, 241);
+  border-radius: 5px;
+}
+
+.container.flex-container14 .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.container.flex-container14 .text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: rgb(126, 234, 238);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.container.flex-container14:hover .image {
+  transform: rotateY(90deg);
+}
+
+.container.flex-container14:hover .text-overlay {
+  opacity: 1;
+}
+
+.additional-text14 {
+  position: relative;
+  top: 20px;
+  left: 110%;
+  font-size: 20px;
+  width: 180%;
+}
+
+.container.flex-container15 {
+  position: relative;
+  float: right;
+  width: 600px;
+  height: 300px;
+  margin-bottom: 100px;
+}
+
+.container.flex-container15 .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+  border: 2px solid rgb(124, 234, 241);
+  border-radius: 5px;
+}
+
+.container.flex-container15 .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.container.flex-container15 .text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: rgb(126, 234, 238);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.container.flex-container15:hover .image {
+  transform: rotateY(90deg);
+}
+
+.container.flex-container15:hover .text-overlay {
+  opacity: 1;
+}
+
+.additional-text15 {
+  position: relative;
+  top: 10px;
+  left: -185%;
+  font-size: 20px;
+  width: 180%;
+}
+
+.container.flex-container16 {
+  position: relative;
+  width: 600px;
+  height: 300px;
+  clear: both;
+  margin-bottom: 30px;
+}
+
+.container.flex-container16 .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+  border: 2px solid rgb(124, 234, 241);
+  border-radius: 5px;
+}
+
+.container.flex-container16 .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.container.flex-container16 .text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: rgb(126, 234, 238);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.container.flex-container16:hover .image {
+  transform: rotateY(90deg);
+}
+
+.container.flex-container16:hover .text-overlay {
+  opacity: 1;
+}
+
+.additional-text16 {
+  position: relative;
+  top: 20px;
+  left: 110%;
+  font-size: 20px;
+  width: 180%;
+}
+
+.container.flex-container17 {
+  position: relative;
+  float: right;
+  width: 600px;
+  height: 300px;
+  margin-bottom: 50px;
+}
+
+.container.flex-container17 .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+  border: 2px solid rgb(124, 234, 241);
+  border-radius: 5px;
+}
+
+.container.flex-container17 .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.container.flex-container17 .text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: rgb(126, 234, 238);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.container.flex-container17:hover .image {
+  transform: rotateY(90deg);
+}
+
+.container.flex-container17:hover .text-overlay {
+  opacity: 1;
+}
+
+.additional-text17 {
+  position: relative;
+  top: 10px;
+  left: -185%;
+  font-size: 20px;
+  width: 180%;
+}
+
+.container.flex-container18 {
+  position: relative;
+  width: 600px;
+  height: 300px;
+  clear: both;
+  margin-bottom: 30px;
+}
+
+.container.flex-container18 .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+  border: 2px solid rgb(124, 234, 241);
+  border-radius: 5px;
+}
+
+.container.flex-container18 .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.container.flex-container18 .text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: rgb(126, 234, 238);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.container.flex-container18:hover .image {
+  transform: rotateY(90deg);
+}
+
+.container.flex-container18:hover .text-overlay {
+  opacity: 1;
+}
+
+.additional-text18 {
+  position: relative;
+  top: 20px;
+  left: 110%;
+  font-size: 20px;
+  width: 180%;
+}
+
+.container.flex-container19 {
+  position: relative;
+  float: right;
+  width: 600px;
+  height: 300px;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+.container.flex-container19 .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+  border: 2px solid rgb(124, 234, 241);
+  border-radius: 5px;
+}
+
+.container.flex-container19 .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.container.flex-container19 .text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: rgb(126, 234, 238);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.container.flex-container19:hover .image {
+  transform: rotateY(90deg);
+}
+
+.container.flex-container19:hover .text-overlay {
+  opacity: 1;
+}
+
+.additional-text19 {
+  position: relative;
+  top: 10px;
+  left: -185%;
+  font-size: 20px;
+  width: 180%;
+}
+
+footer {
+  position: relative;
+  margin-top: 500px;
+}
